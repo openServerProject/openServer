@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>OpenServer SocketChat</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <fieldset>
+                <legend>Server
+                </legend>
+                <p id="serverinfo"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Client Config</legend>
+                <div>
+                    <label>username:</label>
+                    <input type="text" id="userName" value="User" style="width: 170px;" />
+                </div>
+            </fieldset>
+        </div>
+        <div id="content">
+            <fieldset>
+                <legend>IP Address / URL (port: 8765)</legend>
+                <div>
+                    <input type="text" id="serverUrl" value="127.0.0.1" width="500px" />
+                    <button id="connectButton">Connect</button>
+                    <button id="disconnectButton">Disconnect</button>
+                </div>
+                <div>
+                    <label>client_status:</label>
+                    <span id="connectionStatus">NOT_CONNECTED</span>
+                </div>
+            </fieldset>
+            <fieldset id="messageArea">
+                <legend>Chat
+                    <button id="clearMessage">Clear</button>
+                </legend>
+                <div id="messages"></div>
+                <div>
+                    <input id="sendMessage" disabled="disabled" style="margin: 0px; width: 500px">
+                    <button id="sendButton" disabled="disabled">Send</button>
+                </div>
+            </fieldset>
+            <label>Powered by openServer, a open-source WebSocket server implementation.<br>
+            © 2025 AzureTecDevs</label>
+        </div>
+    </div>
+    <input id="tid" style="display:none">
+    <script type="text/javascript" src="lib/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
