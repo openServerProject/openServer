@@ -1,6 +1,0 @@
-{
-    "serverList": [
-        {"Public Server": {"host": "100.115.92.197", "port": 8765}},
-        {"Localhost": {"host": "localhost", "port": 8765}}
-    ]
-}
