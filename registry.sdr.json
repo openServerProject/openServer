@@ -1,0 +1,6 @@
+{
+    "serverList": [
+        {"server": {"name": "Public Server", "data": {"host": "100.115.92.197", "port": 8765}}},
+        {"server": {"name": "Localhost", "data": {"host": "localhost", "port": 8765}}}
+    ]
+}
